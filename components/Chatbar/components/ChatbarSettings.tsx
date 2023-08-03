@@ -56,11 +56,13 @@ export const ChatbarSettings = () => {
         onClick={() => setIsSettingDialog(true)}
       />
 
+      {/* openAI API 密钥
       {!serverSideApiKeyIsSet ? (
         <Key apiKey={apiKey} onApiKeyChange={handleApiKeyChange} />
-      ) : null}
+      ) : null} */}
 
-      {!serverSidePluginKeysSet ? <PluginKeys /> : null}
+      {/* 插件密钥
+      {!serverSidePluginKeysSet ? <PluginKeys /> : null} */}
 
       <SettingDialog
         open={isSettingDialogOpen}
